@@ -1,0 +1,243 @@
+:root {
+  --primary: #1451b2;
+  --secondary: #3d518c;
+  --tertiary: #10204f;
+  --accentblue: #574ae2;
+  --darkblack: #0d0a0b;
+  --lightblue: #f1f9fe;
+  --dark100: #474356;
+  --dark50: #a5a1b5;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  background: linear-gradient(178.47deg, #ffffff 11.88%, #f2fdff 116.13%);
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+button,
+span {
+  font-family: "Manrope", sans-serif;
+}
+.container {
+  max-width: 192rem;
+  margin: 0 12rem;
+}
+.nav-links {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+/* Text Guide */
+.regular12 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+.regular16 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+.regular14 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.regular21 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+}
+.regular24 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+}
+.regular36 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.7rem;
+}
+.regular54 {
+  font-size: 5.4rem;
+  font-weight: 400;
+  line-height: 7rem;
+}
+.regular82 {
+  font-size: 8.2rem;
+  font-weight: 400;
+  line-height: 9.8rem;
+}
+
+/* Semibold */
+.semibold12 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+.semibold16 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+}
+.semibold18 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+.semibold14 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.semibold21 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+}
+.semibold24 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+}
+.semibold36 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.7rem;
+}
+.semibold54 {
+  font-size: 5.4rem;
+  font-weight: 600;
+  line-height: 7rem;
+}
+.semibold82 {
+  font-size: 8.2rem;
+  font-weight: 600;
+  line-height: 9.8rem;
+}
+
+/* Bold */
+.bold12 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+.bold16 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+.bold14 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.bold21 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+.bold24 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+.bold36 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 4.7rem;
+}
+.bold54 {
+  font-size: 5.4rem;
+  font-weight: 700;
+  line-height: 7rem;
+}
+.bold82 {
+  font-size: 8.2rem;
+  font-weight: 700;
+  line-height: 9.8rem;
+}
+/* ExtraBold //////////////////////////////////////////////////////*/
+.extrabold12 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.8rem;
+}
+.extrabold16 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 2.6rem;
+}
+.extrabold14 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 2rem;
+}
+.extrabold21 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 3.2rem;
+}
+.extrabold24 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 3.6rem;
+}
+.extrabold36 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  line-height: 4.7rem;
+}
+.extrabold54 {
+  font-size: 5.4rem;
+  font-weight: 800;
+  line-height: 7rem;
+}
+.extrabold82 {
+  font-size: 8.2rem;
+  font-weight: 800;
+  line-height: 9.8rem;
+}
+/* //////////////////////// */
+.topmarginlarge {
+  margin-top: 12.8rem;
+}
+.topmarginsmall {
+  margin-top: 9.6rem;
+}
+.inline-block {
+  display: inline-block;
+}
+address {
+  text-decoration: none;
+  font-style: normal;
+}
+span {
+  white-space: nowrap;
+}

@@ -1,0 +1,32 @@
+a:hover,
+a:active,
+a:focus {
+  color: var(--accentblue);
+}
+.nav-links::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--accentblue);
+  transition: width 0.3s;
+}
+.nav-links:hover::after {
+  width: 100%;
+}
+.hero-cta:hover {
+  box-shadow: 2px 2px 16px rgba(64, 111, 223, 0.5);
+  background-color: var(--tertiary);
+  transition: all 0.3s;
+}
+/* //////////////////////// */
+.product-item:hover {
+  box-shadow: 2px 2px 24px rgba(64, 111, 223, 0.2);
+  transition: all 0.3s;
+}
+.product-button:hover,
+.product-button:active {
+  background: var(--primary);
+  color: var(--lightblue);
+  transition: all 0.2s;
+}
