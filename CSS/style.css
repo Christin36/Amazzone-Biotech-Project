@@ -154,7 +154,7 @@ nav {
   width: 100%;
   height: auto;
   padding: 4rem 0;
-  background-image: url("/Img/contact.svg");
+  background-image: url("../Img/contact.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
