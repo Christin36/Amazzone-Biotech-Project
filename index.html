@@ -11,6 +11,7 @@
     />
     <link rel="icon" href="Icon/fav-icon.png" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
     <link rel="stylesheet" href="CSS/styleguide.css" />
     <link rel="stylesheet" href="CSS/interactions.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +25,7 @@
     <header>
       <nav>
         <div class="nav container">
-          <a href=""
+          <a href="index.html"
             ><img
               src="Img/amazzon logo.png"
               alt="Logo of Amazzone Biotech Pharma"
@@ -37,6 +38,55 @@
             </li>
             <li class="nav-item">
               <a href="" class="nav-links">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile navigation -->
+        <div class="navbar-mobile">
+          <div class="navbar-main">
+            <a class="logo-link" href="index.html"
+              ><img
+                src="Img/amazzon logo.png"
+                alt="Logo of Amazzone Biotech Pharma"
+                class="logo-nav"
+            /></a>
+            <button onclick="navAnim ()" class="menu-button">
+              <svg
+                id="menu-button"
+                width="40"
+                height="34"
+                viewBox="0 0 40 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35 6H5"
+                  stroke="#292D32"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M35 17H18.3333"
+                  stroke="#292D32"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M35 28L5 28"
+                  stroke="#292D32"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <ul  class="main-nav" id="clicker">
+            <li  class="nav-item"><a href="" class="nav-links">About</a></li>
+            <li  class="nav-item">
+              <a href="products/Gynecology.html" class="nav-links">Products</a>
+            </li>
+            <li  class="nav-item">
+              <a   href="" class="nav-links">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -80,27 +130,33 @@
             ></a>
           </button>
         </div>
-        <div><img src="Img/Hero-image.jpg" class="hero-image" alt="" /></div>
+        <div>
+          <img
+            src="Img/Hero-image.jpg"
+            id="heroImage"
+            class="hero-image"
+            alt=""
+          />
+        </div>
       </section>
     </header>
     <main>
       <section class="section-block">
         <div class="container block">
-          <div class="block-text">
-            <h2 class="block-title extrabold54">Our mission & vision</h2>
-            <p class="block-content regular16">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              pellentesque dui bibendum tincidunt ac vitae. Dignissim donec sed
-              ut ut porta aliquam, ac magna. Ut cras nulla sit feugiat dolor
-              lacus, venenatis. Commodo habitasse molestie potenti varius
-              auctor. Nisi adipiscing eget at euismod volutpat. Porta mattis
-              amet, ut justo. In aliquam sapien sit turpis adipiscing ornare.
-              Feugiat porttitor eget dui nibh sed.
-            </p>
-          </div>
-          <div class="block-image">
-            <img src="Img/Mission&vision.jpg" alt="" />
-          </div>
+          <h2 class="block-title extrabold54">Our mission & vision</h2>
+          <p class="block-content regular16">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
+            pellentesque dui bibendum tincidunt ac vitae. Dignissim donec sed ut
+            ut porta aliquam, ac magna. Ut cras nulla sit feugiat dolor lacus,
+            venenatis. Commodo habitasse molestie potenti varius auctor. Nisi
+            adipiscing eget at euismod volutpat. Porta mattis amet, ut justo. In
+            aliquam sapien sit turpis adipiscing ornare. Feugiat porttitor eget
+            dui nibh sed.
+          </p>
+
+  
+            <img class="block-image" src="Img/Mission&vision.jpg" alt="" />
+        
         </div>
       </section>
       <section class="section-product container topmarginlarge">
@@ -159,21 +215,19 @@
       </section>
       <section class="section-block">
         <div class="container block reverse">
-          <div class="block-text">
-            <h2 class="block-title extrabold54">About us</h2>
-            <p class="block-content regular16">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              pellentesque dui bibendum tincidunt ac vitae. Dignissim donec sed
-              ut ut porta aliquam, ac magna. Ut cras nulla sit feugiat dolor
-              lacus, venenatis. Commodo habitasse molestie potenti varius
-              auctor. Nisi adipiscing eget at euismod volutpat. Porta mattis
-              amet, ut justo. In aliquam sapien sit turpis adipiscing ornare.
-              Feugiat porttitor eget dui nibh sed.
-            </p>
-          </div>
-          <div class="block-image">
-            <img src="Img/About-us.jpg" alt="" />
-          </div>
+          <h2 class="block-title extrabold54">About us</h2>
+          <p class="block-content regular16">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
+            pellentesque dui bibendum tincidunt ac vitae. Dignissim donec sed ut
+            ut porta aliquam, ac magna. Ut cras nulla sit feugiat dolor lacus,
+            venenatis. Commodo habitasse molestie potenti varius auctor. Nisi
+            adipiscing eget at euismod volutpat. Porta mattis amet, ut justo. In
+            aliquam sapien sit turpis adipiscing ornare. Feugiat porttitor eget
+            dui nibh sed.
+          </p>
+      
+            <img class="block-image" src="Img/About-us.jpg" alt="" />
+          
         </div>
       </section>
       <section class="section-contact topmarginlarge">
@@ -246,8 +300,7 @@
               <a class="contact-cta bold24" href="mailto:">Mail us</a>
             </button>
           </div>
-        </div>
-      </section>
+               </section>
     </main>
     <footer class="topmarginlarge">
       <div class="footer-container container">
@@ -352,8 +405,8 @@
         </div>
         <div class="copyright-text">
           <p class="semibold16">All rights reserved | © 2020.</p>
-          <p>
-            Designed & developed by &nbsp;
+          <div class="footer-credits">
+            <p class="regular16">Designed & developed by &nbsp;</p>
             <a
               class="bold16"
               style="color: var(--lightblue)"
@@ -361,7 +414,7 @@
             >
               Oronium</a
             >
-          </p>
+          </div>
         </div>
       </div>
     </footer>

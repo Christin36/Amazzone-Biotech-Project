@@ -1,0 +1,87 @@
+.main {
+  max-width: 192rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 120rem) {
+  .main {
+    margin: 0 12.8rem;
+  }
+}
+
+@media (max-width: 70.3rem) {
+  .main {
+    margin: 0 6.4rem;
+  }
+  /* Navbar mobile
+ */
+  nav {
+    filter: none;
+    position: relative;
+  }
+  .nav {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.1));
+    z-index: 10000;
+  }
+  .navbar-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 192rem;
+    margin: 0 6.4rem;
+    height: 8rem;
+  }
+  .main-nav {
+    padding-top: 9.6rem;
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    transition: all 3s;
+  }
+  .section-page-nav {
+    margin-top: 12.8rem !important;
+  }
+  .active-mobile {
+    display: flex !important;
+  }
+  .page-nav li .semibold18 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .container {
+    margin: 12.8rem 9.6rem 0 9.6rem !important;
+  }
+  .medicine-links {
+    display: none;
+  }
+}
+@media (max-width: 56.5rem) {
+  .page-nav {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .view-button {
+    display: block;
+    margin-top: 2.4rem;
+  }
+
+  .view-less {
+    display: flex;
+    justify-items: center;
+  }
+  .bold36 {
+    font-size: 2.8rem !important;
+    line-height: 3.6rem !important;
+  }
+}

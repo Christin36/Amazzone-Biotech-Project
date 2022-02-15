@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/styleguide.css" />
     <link rel="stylesheet" href="/CSS/interactions.css" />
+    <link rel="stylesheet" href="/CSS/queries-med.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,8 +40,59 @@
             </li>
           </ul>
         </div>
+        <!-- Mobile navigation -->
+        <div class="navbar-mobile">
+          <div class="navbar-main">
+            <a class="logo-link" href="/index.html"
+              ><img
+                src="/Img/amazzon logo.png"
+                alt="Logo of Amazzone Biotech Pharma"
+                class="logo-nav"
+            /></a>
+            <button onclick="navAnim ()" class="menu-button">
+              <svg
+                id="menu-button"
+                width="40"
+                height="34"
+                viewBox="0 0 40 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35 6H5"
+                  stroke="#292D32"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M35 17H18.3333"
+                  stroke="#292D32"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M35 28L5 28"
+                  stroke="#292D32"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <ul class="main-nav" id="clicker">
+            <li class="nav-item">
+              <a href="" class="nav-links">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="products/Gynecology.html" class="nav-links">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-links">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <section class="section-page-nav container">
+      <section class="section-page-nav main">
         <div>
           <ul class="page-nav">
             <li>
@@ -68,7 +121,7 @@
       </section>
     </header>
     <main>
-      <section class="section-medicine">
+      <section class="section-medicine main">
         <h2 class="bold36 medicine-title">
           1.Diclofenac Potassium and Serratiopeptidase Tablets
         </h2>
@@ -83,15 +136,19 @@
             combination composed of diclofenac and serratiopeptidase. Diclofenac
             works by blocking the action of a chemical messenger known as
             cyclo-oxygenase (COX) which cause pain and swelling at the injured
-            or damaged tissue. Serratiopeptidase is a proteolytic enzyme which
-            helps in the breakdown of insoluble protein (fibrin) a by-product of
-            blood clot into smaller units. It also causes thinning of the fluids
-            in the body as a result of injury, thereby making fluid drainage
-            smoother in the swollen tissue. Pain can be temporary (acute) or
-            lifelong (chronic) in nature.
+            or damaged tissue.
+          </p>
+
+          <p class="description-content-2 hide regular16" id="hide1">
+            Serratiopeptidase is a proteolytic enzyme which helps in the
+            breakdown of insoluble protein (fibrin) a by-product of blood clot
+            into smaller units. It also causes thinning of the fluids in the
+            body as a result of injury, thereby making fluid drainage smoother
+            in the swollen tissue. Pain can be temporary (acute) or lifelong
+            (chronic) in nature.
           </p>
         </div>
-        <div class="usage">
+        <div class="usage hide" id="hide2">
           <span class="description-title extrabold16">Usage: </span>
           <p class="description-content regular16">
             Amzer-D Tablet 15's is used in the reduction of pain and
@@ -100,46 +157,46 @@
             pain.
           </p>
         </div>
-        <ol class="medicine-links">
+        <ul class="medicine-links">
           <li>
             <a href="" class="regular12"
-              >Diclofenac Potassium and Serratiopeptidase Tablets</a
+              >1.Diclofenac Potassium and Serratiopeptidase Tablets</a
             >
           </li>
           <li>
             <a href="" class="regular12"
-              >Diclofenac Potassium and Serratiopeptidase Tablets</a
+              >2.Diclofenac Potassium and Serratiopeptidase Tablets</a
             >
           </li>
           <li>
             <a href="" class="regular12"
-              >Diclofenac Potassium and Serratiopeptidase Tablets</a
+              >3.Diclofenac Potassium and Serratiopeptidase Tablets</a
             >
           </li>
           <li>
             <a href="" class="regular12"
-              >Diclofenac Potassium and Serratiopeptidase Tablets</a
+              >4.Diclofenac Potassium and Serratiopeptidase Tablets</a
             >
           </li>
           <li>
             <a href="" class="regular12"
-              >Diclofenac Potassium and Serratiopeptidase Tablets</a
+              >5.Diclofenac Potassium and Serratiopeptidase Tablets</a
             >
           </li>
           <li>
             <a href="" class="regular12"
-              >Diclofenac Potassium and Serratiopeptidase Tablets</a
+              >6.Diclofenac Potassium and Serratiopeptidase Tablets</a
             >
           </li>
           <li>
             <a href="" class="regular12"
-              >Diclofenac Potassium and Serratiopeptidase Tablets</a
+              >7.Diclofenac Potassium and Serratiopeptidase Tablets</a
             >
           </li>
-        </ol>
+        </ul>
       </section>
-      <section class="section-medicine-details">
-        <div class="main-block-medicine">
+      <section class="section-medicine-details hide" id="hide3">
+        <div class="main-block-medicine main">
           <div class="block-medicine">
             <h4 class="bold24" style="color: var(--darkblack)">
               Contraindications
@@ -186,6 +243,10 @@
           </div>
         </div>
       </section>
+      <div id="button-container" class="button-container">
+        <button class="view-button" id="viewbtn">View More</button>
+      </div>
     </main>
+    <script src="/script.js"></script>
   </body>
 </html>

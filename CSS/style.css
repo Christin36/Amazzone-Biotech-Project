@@ -9,6 +9,11 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 192rem;
+  margin: 0 12rem;
+}
+.navbar-mobile {
+  display: none;
 }
 .logo-nav {
   height: 4rem;
@@ -21,7 +26,12 @@ nav {
   flex-direction: row;
   gap: 6.4rem;
   align-items: center;
+  justify-self: flex-end;
 }
+.active-mobile {
+  display: flex !important;
+}
+
 /* Section Hero */
 .section-hero {
   display: grid;
@@ -29,7 +39,7 @@ nav {
   column-gap: 4rem;
 }
 .hero-image {
-  width: 100%;
+  height: 100%;
 }
 .hero-text {
   display: flex;
@@ -37,6 +47,7 @@ nav {
   gap: 4rem;
   align-items: flex-start;
   align-self: center;
+  margin: 2.4rem 0;
 }
 .hero-title {
   font-size: 6.4rem;
@@ -78,15 +89,26 @@ nav {
   background-color: var(--lightblue);
 }
 .block {
-  display: flex;
-  flex-direction: row;
-  gap: 7.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 2.4rem;
+  column-gap: 6.4rem;
+  grid-template-rows: repeat(2, auto);
   margin: 0 20rem !important;
 }
-.block-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
+.block-title {
+  align-self: flex-start;
+  grid-column: span 2;
+}
+.block-content {
+  grid-column: 1/2;
+}
+.block-image {
+  grid-column: 2/-1;
+  align-self: flex-start;
+}
+.block-image img {
+  border-radius: 2.4rem;
 }
 /* Section_product ///////////////////////////////////////////////*/
 .section-product {
@@ -98,8 +120,9 @@ nav {
 .product-text {
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 1.6rem;
   align-self: center;
+  align-items: center;
 }
 .product-header {
   color: var(--darkblack);
@@ -149,23 +172,54 @@ nav {
 .section-contact {
   margin: 0 20rem;
   border-radius: 6.4rem;
+  display: flex;
+
+  justify-content: center;
 }
 .contact-block {
   width: 100%;
   height: auto;
   padding: 4rem 0;
-  background-image: url("../Img/contact.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: var(--secondary);
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
   align-items: center;
-  border-radius: 6.4rem;
   background-size: 100%;
+  position: relative;
+  max-width: 108.16rem;
+  border-radius: 6.4rem;
+}
+.contact-block::after {
+  content: "";
+  position: absolute;
+  background-image: url("../Img/man-contact.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  bottom: 0;
+  left: 10rem;
+  width: inherit;
+  height: 115%;
+  z-index: 1;
+  border-radius: 6.4rem;
+}
+.contact-block::before {
+  content: "";
+  position: absolute;
+  background-image: url("../Img/circles-contact.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 339px;
+  z-index: 1;
+  border-radius: 6.4rem;
+  overflow: hidden;
 }
 .contact-title {
   color: #ffff;
+  z-index: 200;
 }
 .contact-text {
   color: var(--lightblue);
@@ -174,16 +228,18 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 2.4rem;
+  align-items: center;
 }
 .body-text {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+  display: grid;
+  max-height: min-content;
+  row-gap: 4rem;
+  z-index: 200;
 }
 .contact-text-flex {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 0.8rem;
 }
 .contact-cta {
   padding: 0.8rem 1.6rem;
@@ -240,9 +296,9 @@ footer {
   margin-top: 4rem !important;
 }
 .page-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  column-gap: 1.6rem;
   align-items: center;
   justify-content: center;
 }
@@ -250,16 +306,17 @@ footer {
   color: var(--dark50) !important;
 }
 .page-name {
-  color: var(--tertiary);
+  color: var(--accentblue);
 }
 /*//////////////////////////////////Section Medicine */
 .section-medicine {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+grid-template-columns: repeat(3,auto);
   grid-template-rows: repeat(3, min-content);
   column-gap: 2.4rem;
   row-gap: 2.4rem;
-  margin: 9.6em 6rem 0 14rem;
+  margin-top: 6.4rem!important;
+  position: relative;
 }
 .medicine-title {
   grid-column: 1/3;
@@ -278,19 +335,36 @@ footer {
   grid-row: 3/4;
 }
 .medicine-links {
-  width: 60%;
-  grid-row: 2/4;
-  align-self: flex-start;
-  justify-self: flex-end;
-  justify-items: flex-start;
-  display: flex;
+  grid-row: 1/-1;
+  grid-column: 3/4;
+  display:flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap:.8rem
+  
+  
+}
+.margin-left{
+  margin-right: 34rem;
+  
 }
 ol li a {
   color: var(--accentblue);
 }
-
+.view-button{
+  display: flex;
+  padding: 1.6rem;
+  color:var(--accentblue);
+  background-color: var(--lightblue);
+  border-radius: .8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.hide {
+  display: none!important;
+}
+.active{
+  display: block!important;
+}
 
 /* Section medical details - Contraindications and Side effects */
 .section-medicine-details {
@@ -314,4 +388,15 @@ ol li a {
 }
 .block-points {
   list-style: disc;
+}
+.footer-credits {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
 }
