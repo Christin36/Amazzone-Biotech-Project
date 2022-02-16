@@ -296,9 +296,9 @@ footer {
   margin-top: 4rem !important;
 }
 .page-nav {
-  display: grid;
-  grid-template-columns: repeat(7, auto);
-  column-gap: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
   align-items: center;
   justify-content: center;
 }
@@ -307,6 +307,11 @@ footer {
 }
 .page-name {
   color: var(--accentblue);
+}
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 /*//////////////////////////////////Section Medicine */
 .section-medicine {

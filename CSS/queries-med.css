@@ -64,6 +64,9 @@
   }
 }
 @media (max-width: 56.5rem) {
+  .main-block-medicine {
+    column-gap: 6.4rem;
+  }
   .page-nav {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -73,7 +76,6 @@
   }
   .view-button {
     display: block;
-    margin-top: 2.4rem;
   }
 
   .view-less {
@@ -83,5 +85,71 @@
   .bold36 {
     font-size: 2.8rem !important;
     line-height: 3.6rem !important;
+  }
+}
+@media (max-width: 43.5rem) {
+  .pagination-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .regular16 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .section-medicine {
+    margin-top: 4rem !important;
+  }
+  .main {
+    margin: 0 4rem;
+  }
+  .main-block-medicine {
+    grid-template-columns: 5fr 4fr;
+  }
+}
+@media (max-width: 33.1rem) {
+  #menu-button {
+    height: 2.4rem;
+  }
+  .bold36 {
+    font-size: 2.4rem !important;
+    line-height: 3.2rem !important;
+  }
+  .bold24 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .main {
+    margin: 0 2.4rem;
+  }
+  .main-block-medicine {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 4rem;
+    margin: 0 !important;
+  }
+  .navbar-main {
+    margin: 0 2.4rem;
+  }
+  .section-medicine {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(4, auto);
+  }
+  .description {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+  }
+  .usage {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+  }
+  .medicine-image {
+    justify-self: center;
+  }
+}
+@media (max-width: 25.125rem) {
+  .page-nav li .semibold18 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 }

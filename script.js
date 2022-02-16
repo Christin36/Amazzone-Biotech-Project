@@ -35,7 +35,7 @@ my.addEventListener("click", function () {
   if (my.textContent === "View Less") {
     my.textContent = "View More";
   } else {
-    z.style.marginTop = "4rem";
+    z.style.marginTop = "2.4rem";
     my.textContent = "View Less";
   }
 });
