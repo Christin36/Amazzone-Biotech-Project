@@ -1,11 +1,11 @@
-function imgSrc() {
-  let x = window.innerWidth;
-  if (x <= 1187) {
-    document.getElementById("heroImage").src = "../Img/Hero-image-tablet.jpg";
-  } else if (x <= 644) {
-    document.getElementById("heroImage").src = "../Img/Hero_Mobile.jpg";
-  }
-}
+// function imgSrc() {
+//   let x = window.innerWidth;
+//   if (x <= 1187) {
+//     document.getElementById("heroImage").src = "../Img/Hero-image-tablet.jpg";
+//   } else if (x <= 644) {
+//     document.getElementById("heroImage").src = "../Img/Hero_Mobile.jpg";
+//   }
+// }
 //listen for window resize event
 window.addEventListener("resize", function (event) {
   imgSrc();
