@@ -145,7 +145,7 @@
     column-gap: 4rem;
   }
   .navbar-main {
-    margin: 0 9.6rem;
+    margin: 0 4rem;
   }
   .product-item .bold36 {
     font-size: 2.1rem;
@@ -177,7 +177,6 @@
     justify-self: center;
   }
   .block {
-    width: max-content;
     grid-template-rows: repeat(3, auto);
   }
   .block-content {

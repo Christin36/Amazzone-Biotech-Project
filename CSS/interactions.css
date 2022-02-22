@@ -30,3 +30,20 @@ a:focus {
   color: var(--lightblue);
   transition: all 0.2s;
 }
+footer a:hover,
+footer a:active {
+  color: var(--accentblue);
+}
+/* ///////////////// */
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 100000000;
+}
+header {
+  margin-bottom: 12.8rem;
+}
+.rotateSVG {
+  transform: rotate(180deg);
+  transition: linear 0.3s;
+}

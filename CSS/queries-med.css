@@ -1,11 +1,11 @@
 .main {
   max-width: 192rem;
-  margin: 0 auto;
+  margin: 0 24rem;
 }
 
 @media (max-width: 120rem) {
   .main {
-    margin: 0 12.8rem;
+    margin: 0 19.6rem;
   }
 }
 
@@ -48,6 +48,7 @@
   }
   .section-page-nav {
     margin-top: 12.8rem !important;
+    margin-bottom: 6.4rem !important;
   }
   .active-mobile {
     display: flex !important;
@@ -64,6 +65,11 @@
   }
 }
 @media (max-width: 56.5rem) {
+  .pagination-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
   .main-block-medicine {
     column-gap: 6.4rem;
   }
@@ -88,11 +94,6 @@
   }
 }
 @media (max-width: 43.5rem) {
-  .pagination-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
   .regular16 {
     font-size: 1.4rem;
     line-height: 2.1rem;

@@ -11,7 +11,7 @@ window.addEventListener("resize", function (event) {
   imgSrc();
 });
 // nav Bar animation
-
+let k = 1;
 function navAnimation(id) {
   var x = document.getElementById(id);
   x.classList.toggle("active-mobile");
@@ -20,22 +20,32 @@ function navAnimation(id) {
 function navAnim() {
   navAnimation("clicker");
 }
-/////////////////////////////////Click med page
-// view button control
-let more = document.querySelectorAll(".hide");
-const my = document.getElementById("viewbtn");
-const you = document.getElementById("lessbtn");
-const z = document.getElementById("button-container");
-for (let i = 0; i < more.length; i++) {
-  my.addEventListener("click", function () {
-    more[i].classList.toggle("active");
-  });
+function closeMenu() {
+  var x = document.getElementById("clicker");
+  x.classList.toggle("active-mobile");
 }
-my.addEventListener("click", function () {
-  if (my.textContent === "View Less") {
-    my.textContent = "View More";
+// ///////////////////////////////////////Scroll code>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+$(document).on("click", ".toggle-text-button", function () {
+  // Check if text is more or less
+  if ($(this).text() == "View More") {
+    // Change link text
+    $(this).text("View Less");
+
+    // Travel up DOM tree to parent, then find any children with CLASS .toggle-text and slide down
+    $(this).parent().children(".toggle-text").slideDown();
   } else {
-    z.style.marginTop = "2.4rem";
-    my.textContent = "View Less";
+    // Change link text
+    $(this).text("View More");
+
+    // Travel up DOM tree to parent, then find any children with CLASS .toggle-text and slide up
+    $(this).parent().children(".toggle-text").slideUp();
   }
 });
+// //////Navbar Animation
+image.setAttribute("alt", "Image of a medicine");
+// Footer Js
+// ///////////////
+function menubutton() {
+  let a = document.getElementById("menu-button");
+  a.classList.toggle("rotateSVG");
+}
