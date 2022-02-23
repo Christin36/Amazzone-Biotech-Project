@@ -23,6 +23,7 @@ function navAnim() {
 function closeMenu() {
   var x = document.getElementById("clicker");
   x.classList.toggle("active-mobile");
+  menubutton();
 }
 // ///////////////////////////////////////Scroll code>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 $(document).on("click", ".toggle-text-button", function () {
