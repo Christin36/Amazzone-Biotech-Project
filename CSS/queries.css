@@ -182,11 +182,12 @@
   }
   .block-content {
     grid-column: 1/-1;
-    justify-self: center;
+    justify-self: flex-start;
   }
   .block-image {
     grid-column: 1/-1;
     justify-self: center;
+    grid-row: 4/-1;
   }
   .product-grid {
     display: flex;
