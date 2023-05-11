@@ -70,7 +70,7 @@ nav {
   border-radius: 1.6rem;
 }
 .cta-text {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   line-height: 2.7rem;
   color: #ffff;
   font-kerning: -1.5%;
@@ -300,6 +300,15 @@ footer {
 /* //////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////// */
 /* Product Page */
+.pageindicator {
+  padding-top: 24px;
+}
+.pagename {
+  color: rgb(138, 138, 138);
+}
+.currentname {
+  color: #999;
+}
 .section-page-nav {
   margin-top: 4rem !important;
 }
@@ -422,4 +431,7 @@ ol li a {
 }
 .toggle-text {
   display: none;
+}
+.button-link {
+  display: block;
 }

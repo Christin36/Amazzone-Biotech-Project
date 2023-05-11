@@ -35,11 +35,6 @@ footer a:active {
   color: var(--accentblue);
 }
 /* ///////////////// */
-nav {
-  position: fixed;
-  top: 0;
-  z-index: 100000000;
-}
 .rotateSVG {
   transform: rotate(180deg);
   transition: linear 0.3s;
