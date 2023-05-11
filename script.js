@@ -30,7 +30,7 @@ $(document).on("click", ".toggle-text-button", function () {
   // Check if text is more or less
   if ($(this).text() == "View More") {
     // Change link text
-    $(this).text("View Less");
+    $(this).text("View More");
 
     // Travel up DOM tree to parent, then find any children with CLASS .toggle-text and slide down
     $(this).parent().children(".toggle-text").slideDown();
