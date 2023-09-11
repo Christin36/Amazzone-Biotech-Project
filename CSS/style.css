@@ -37,9 +37,19 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 4rem;
+  margin-top: 6.4rem !important;
 }
 .hero-image {
   height: 100%;
+}
+.hero-image-container {
+  display: flex;
+  justify-content: space-around;
+}
+.hero-text-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 .hero-text {
   display: flex;
